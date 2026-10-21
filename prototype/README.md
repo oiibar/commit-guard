@@ -78,13 +78,21 @@ Confirms that the user's access token has been saved.
 
 ## 4. Main User Flow
 1.The developer opens a GitHub commit page.
+
 2.The developer opens the Commit Guard browser extension.
+
 3.The extension identifies the selected commit.
+
 4.The developer starts the security analysis.
+
 5.The system analyzes the commit using static analysis and machine learning.
+
 6.The results display the risk level and detected security findings.
+
 7.The developer reviews the findings and may mark a finding as a false alarm.
+
 8.The developer can access previous analyses and manage extension settings.
+
 
 ## 5. Prototype Status
 The UX/UI prototype has been approved by the project supervisor.
