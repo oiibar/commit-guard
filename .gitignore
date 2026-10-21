@@ -1,0 +1,7 @@
+/ignore_docs
+.env
+
+# ML
+src/ml/data/
+src/ml/__pycache__/
+src/ml/.ipynb_checkpoints/
