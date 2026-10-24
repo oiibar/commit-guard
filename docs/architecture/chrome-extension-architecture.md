@@ -3,7 +3,7 @@
 This document describes the proposed architecture of the Commit Guard Chrome/Edge extension. The extension identifies supported GitHub commit or pull-request pages, lets users request an analysis, and presents security findings returned by the backend. Vulnerability scanning and ML classification are performed by backend services, not in the browser.
 
 # 2. Architecture Overview
-<img src="mermaid-diagram.png" width="600" height="700" alt="">
+<img src="chrome-extension-architecture.png" width="600" height="700" alt="">
 
 # 3. Component Responsibilities
 |Component|Responsibility| Boundary|
@@ -24,7 +24,7 @@ This document describes the proposed architecture of the Commit Guard Chrome/Edg
 7. The extension displays the overall risk level and available findings, explanations, and statuses.
 8. On failure, the extension shows a recoverable error and offers retry where appropriate.
 
-<img src="mermaid-diagram -2 .png" width="800" height="400" alt="">
+<img src="chrome-extension-sequence.png" width="800" height="400" alt="">
 
 # 5. Interface Contracts (Proposed)
 Before writing the code, it is necessary to approve the final endpoint paths and data structure with the backend developer. Conceptually, the request can transmit the repository owner and name (repository_owner, repository_name), the commit hash (commit_sha), or the PR identifier (if pull request analysis is supported). The API response may include analysis_id, status, risk_level, and a list of found issues (findings) containing the location, criticality, description, and confidence level of the model.
